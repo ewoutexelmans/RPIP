@@ -3,14 +3,14 @@ import os
 
 from slackclient import SlackClient
 
-path = os.path.join(os.path.expanduser('~pi'),'Documents','rpip','myIp.txt')
+path = os.path.join(os.path.expanduser('~pi'),'rpip','jaar2','myIp')
 
 
 def getIp():
 	s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 	connected = False
 	while not connected:
-		try:	
+		try:
 			s.connect(("gmail.com",80))
 			connected = True
 		except Exception as e:
