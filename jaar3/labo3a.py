@@ -34,6 +34,7 @@ while turn<10:
             GPIO.output(led,GPIO.LOW)
             check = False
     turn+=1
+    time.sleep(1)
 if score_a>score_b:
     print("player a won")
 elif score_a==score_b:
