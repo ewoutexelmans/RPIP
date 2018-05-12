@@ -47,7 +47,7 @@ try:
     file.close()
 
 
-pwm2.hardware_PWM(pin2, freq, dc)
+pwm.hardware_PWM(pin2, freq, dc)
 
 except FileNotFoundError:
     print("File not found")
