@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 n = 0
 
-@app.rout("/")
+@app.route("/")
 def hello():
     global n
     n += 1
