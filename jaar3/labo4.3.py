@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import readchar
 import pigpio
 
